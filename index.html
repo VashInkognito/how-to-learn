@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <!--Контейнер страницы-->
+    <!------------------------Контейнер страницы------------------>
     <div class="page">
-      <!--начало header-->
+      <!---------------------------------Шапка-------------------->
       <header class="header">
-        <img
-          src="./images/logo_place_header.svg"
-          alt="Логотип Яндекса"
-          class="logo logo_place_header"
-        />
+        <div class="logo logo_place_header">
+          <img src="./images/logo_place_header.svg" alt="Логотип Яндекса" />
+        </div>
         <h1 class="header__title">Научиться учиться</h1>
-        <h2 class="subtitle header__subtitle">
+        <h2 class="header__subtitle">
           Какие современные и эффективные подходы к обучению вы можете
           использовать в своей жизни?
-          <a class="link header__link" href="#">Узнать &rarr;</a>
+          <a class="header__link link" href="#">Узнать &rarr;</a>
         </h2>
         <img
           class="main-illustration"
@@ -30,15 +28,12 @@
         />
         <div class="square-pic"></div>
       </header>
-      <!--конец header-->
-      <!--начало основного контента-->
+      <!--------------------------Основной контент---------------->
       <main class="content">
-        <!--секция description-->
+        <!------------------------секция description-------------->
         <section class="description">
-          <div class="two-columns">
-            <h2 class="title two-columns__brief">
-              Главные проблемы в обучении
-            </h2>
+          <div class="two-columns centered-block">
+            <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">
                 Ни в школе, ни в институте нас не учат тому, как правильно
@@ -60,19 +55,18 @@
             </div>
           </div>
         </section>
-        <!--конец description-->
-        <!--секция digits-->
+        <!-------------------------секция digits------------------>
         <section class="digits">
-          <h2 class="title digits__title">Цифры и факты</h2>
-          <h3 class="subtitle digits__subtitle">Про учёбу и мозг</h3>
-          <div class="table">
+          <h2 class="digits__title centered-block">Цифры и факты</h2>
+          <h3 class="digits__subtitle centered-block">Про учёбу и мозг</h3>
+          <div class="table centered-block">
             <div class="table__cell">
               <p class="table__heading">86 миллиардов</p>
               <p class="table__text">Число нейронов в мозге человека</p>
             </div>
             <div class="table__cell">
               <p class="table__heading">2,1 миллиарда</p>
-              <p class="table__text">
+              <p class="table__text paragraph_first">
                 Число нуждающихся в повышении квалификации
               </p>
               <p class="table__text">Всемирный Банк, 2017</p>
@@ -90,7 +84,7 @@
             </div>
             <div class="table__cell">
               <p class="table__heading">420 миллионов</p>
-              <p class="table__text">
+              <p class="table__text paragraph_first">
                 Число взрослых людей моложе 25 лет, не имеющих образования для
                 трудоустройства
               </p>
@@ -110,153 +104,151 @@
             </div>
           </div>
         </section>
-        <!--конец digits-->
-        <!--секция feynman-->
+        <!-------------------------секция feynman----------------->
         <section class="feynman">
-          <h2 class="title feynman__title">Метод Фейнмана</h2>
-          <h3 class="feynman__subtitle subtitle">Выучить и не забыть.</h3>
-          <a href="#" class="link feynman__link">Подробнее &rarr;</a>
+          <h2 class="feynman__title">Метод Фейнмана</h2>
+          <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
+
+          <a
+            href="https://lifehacker.ru/metod-fejnmana/"
+            target="_blank"
+            class="feynman__link link"
+            >Подробнее &rarr;</a
+          >
           <img
             src="./images/feynman.png"
             alt="Портрет Фреймана"
             class="feynman__img"
           />
         </section>
-        <!--конец feynman-->
-        <!--секция kaufman-->
+        <!-------------------------секция kaufman----------------->
         <section class="kaufman">
-          <h2 class="kaufman__title title theme_dark">Принципы обучения</h2>
-          <h3 class="kaufman__subtitle subtitle theme_dark">
-            от Джоша Кауфмана
-          </h3>
-          <div class="table theme_dark">
-            <div class="table__cell theme_dark">
+          <h2 class="kaufman__title centered-block">Принципы обучения</h2>
+          <h3 class="kaufman__subtitle centered-block">от Джоша Кауфмана</h3>
+          <div class="table centered-block">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">1</p>
               <p class="table__text theme_dark">
                 Выберите привлекательный проект.
               </p>
             </div>
-            <div class="table__cell theme_dark">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">2</p>
               <p class="table__text theme_dark">
                 Сосредоточьтесь на каком-то одном навыке.
               </p>
             </div>
-            <div class="table__cell theme_dark">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">3</p>
               <p class="table__text theme_dark">
                 Определите целевой уровень мастерства.
               </p>
             </div>
-            <div class="table__cell theme_dark">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">4</p>
               <p class="table__text theme_dark">Разбейте навык на элементы.</p>
             </div>
-            <div class="table__cell theme_dark">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">5</p>
               <p class="table__text theme_dark">
                 Приготовьте всё необходимое для занятий.
               </p>
             </div>
-            <div class="table__cell theme_dark">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">6</p>
               <p class="table__text theme_dark">
                 Устраните препятствия для занятий.
               </p>
             </div>
-            <div class="table__cell theme_dark">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">7</p>
               <p class="table__text theme_dark">
                 Выделите специальное время для занятий.
               </p>
             </div>
-            <div class="table__cell theme_dark">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">8</p>
               <p class="table__text theme_dark">
                 Создайте быстрые петли обратной связи.
               </p>
             </div>
-            <div class="table__cell theme_dark">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">9</p>
               <p class="table__text theme_dark">
                 Занимайтесь по расписанию, короткими интенсивными интервалами.
               </p>
             </div>
-            <div class="table__cell theme_dark">
+            <div class="table__cell_theme_dark">
               <p class="table__heading theme_dark">10</p>
               <p class="table__text theme_dark">
                 Уделяйте внимание количеству и скорости.
               </p>
             </div>
           </div>
-          <div class="kaufman__triangle"></div>
+          <img
+            src="./images/kaufman-triangle.svg"
+            alt="Фоновый треугольник"
+            class="kaufman__triangle"
+          />
+
+          <div class=""></div>
         </section>
-        <!--конец kaufman-->
       </main>
-      <!--конец основного контента--->
-      <!--начало footer--->
+      <!-------------------------------footer--------------------->
       <footer class="footer">
-        <div class="footer__column">
+        <div class="footer__column centered-block">
           <div class="footer__column_content_copyright">
-            <img
-              src="./images/logo_place_footer.svg"
-              alt="Логотип Яндекса"
-              class="logo logo_place_footer"
-            />
-            <p class="footer__author theme_dark">&copy; Виктор Абанькин</p>
+            <div class="logo logo_place_footer">
+              <img src="./images/logo_place_footer.svg" alt="Логотип Яндекса" />
+            </div>
+            <p class="footer__author">&copy; Виктор Абанькин</p>
           </div>
-          <div class="footer__column_content_info theme_dark">
+          <nav class="footer__column_content_info">
             <h2 class="footer__column-heading">О Практикуме</h2>
-            <p class="footer__column-links">
-              <a href="#" class="link">Главная</a>
-            </p>
-            <p class="footer__column-links">
-              <a href="#" class="link">Концепция</a>
-            </p>
-            <p class="footer__column-links">
-              <a href="#" class="link">Наставники</a>
-            </p>
-          </div>
-          <div class="footer__column_content_social theme_dark">
+            <ul class="footer__column-links">
+              <li><a class="column-link" href="#">Главная</a></li>
+              <li><a class="column-link" href="#">Концепция</a></li>
+              <li><a class="column-link" href="#">Наставники</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__column_content_social">
             <!--пункт 9/ в брифе?-->
             <h2 class="footer__column-heading">Соцсети</h2>
-            <p class="footer__column-links">
-              <a href="#" target="_blank" class="link"
-                ><img
-                  src="./images/youtube-icon.svg"
-                  alt="иконка youtube"
-                  class="icon"
-                />
-                Youtube</a
-              >
-            </p>
-            <p class="footer__column-links">
-              <a href="#" class="link"
-                ><img
-                  src="./images/vk_color_white.svg"
-                  target="_blank"
-                  alt="иконка vk"
-                  class="icon"
-                />
-                ВКонтакте</a
-              >
-            </p>
-            <p class="footer__column-links">
-              <a href="#" class="link"
-                ><img
-                  src="./images/tiktok-icon.svg"
-                  target="_blank"
-                  alt="иконка tiktok"
-                  class="icon"
-                />
-                TikTok</a
-              >
-            </p>
-          </div>
+            <ul class="footer__column-links">
+              <li>
+                <a class="column-link" href="#" target="_blank"
+                  ><img
+                    src="./images/youtube-icon.svg"
+                    alt="иконка youtube"
+                    class="social-icon"
+                  />
+                  Youtube</a
+                >
+              </li>
+              <li>
+                <a class="column-link" href="#" target="_blank"
+                  ><img
+                    src="./images/vk_color_white.svg"
+                    alt="иконка vk"
+                    class="social-icon"
+                  />
+                  ВКонтакте</a
+                >
+              </li>
+              <li>
+                <a class="column-link" href="#" target="_blank"
+                  ><img
+                    src="./images/tiktok-icon.svg"
+                    alt="иконка tiktok"
+                    class="social-icon"
+                  />
+                  TikTok</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
       </footer>
-      <!--конец footer--->
     </div>
-    <!--контейнер страницы-->
   </body>
 </html>
