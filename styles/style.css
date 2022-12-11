@@ -154,6 +154,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .table__cell {
@@ -264,7 +265,7 @@
 
 .table__cell_theme_dark {
   width: 200px;
-  margin-top: 80px;
+  margin: 80px 0 0;
 }
 
 .kaufman__triangle {
