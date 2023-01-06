@@ -1,3 +1,18 @@
+
+  @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -14,6 +29,11 @@
 .link {
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity 1s ease;
+}
+
+.link:hover {
+  opacity: 0.5;
 }
 
 /**----------------------------header-------------------------**/
@@ -26,6 +46,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .logo_place_header {
@@ -78,7 +99,7 @@
 /**----------------------------description-------------------------**/
 
 .description {
-  padding: 100px 0;
+  padding-top: 100px;
   box-sizing: border-box;
 }
 
@@ -121,59 +142,66 @@
   font-weight: 600;
 }
 
-/**----------------------------digits-------------------------**/
+/**----------------------------techniques-------------------------**/
 
-.digits {
-  padding-bottom: 100px;
-  box-sizing: border-box;
+.techniques {
+  padding-top: 100px;
 }
 
-.section-title {
-  width: 60%;
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 1.15;
-  text-align: center;
-  margin: 0 auto 20px;
-}
-
-.section-subtitle {
-  width: 60%;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.table {
-  width: 1100px;
+.cards {
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0;
+  display: grid;
+  grid-template-columns: 240px 240px 240px;
+  gap: 100px;
+  width: 920px;
 }
 
-.table__cell {
-  width: 250px;
-  list-style-type: none;
-  padding-left: 0;
-  margin: 60px 0 0;
+.cards__item {
+  width: 240px;
 }
 
-.table__heading {
+.cards__image {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  margin: 60px 40px 43px 40px;
+}
+
+.cards__title {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.15;
+  text-align: center;
   margin: 0;
 }
 
-.table__text {
+.cards__description {
   font-size: 18px;
   font-weight: normal;
-  line-height: 1.2;
-  margin: 20px 0 0;
+  line-height: 23px;
+  text-align: center;
+  margin: 16px 0 0;
+}
+
+/**----------------------------video-------------------------**/
+
+.video {
+  padding-top: 100px;
+}
+
+.video__iframes {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  margin: 50px auto -60px;
+}
+
+/**----------------------------oakley-------------------------**/
+
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
 }
 
 /**----------------------------feynman-------------------------**/
@@ -225,6 +253,128 @@
   z-index: 1;
 }
 
+/**----------------------------digits-------------------------**/
+
+.digits {
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  width: 60%;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.section-subtitle {
+  width: 60%;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.table {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.table__cell {
+  width: 250px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 60px 0 0;
+}
+
+.table__heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.table__text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 20px 0 0;
+}
+
+/**-------------------------------khan------------------------------**/
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.khan__author {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 42px;
+  margin: 0;
+}
+
+.khan__title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.khan__quote {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  width: 790px;
+  margin: 50px 0 36px 0;
+}
+
+.khan__quote-author {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.khan__quote-author-subline {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.15;
+  margin: 10px 0 0 0;
+}
+
+.book-container {
+  margin-top: 68px;
+  display: flex;
+}
+
+.khan__book-pic {
+  margin-right: 48px;
+  background-image: url(/images/khan-book.jpg);
+  background-size: cover;
+  width: 620px;
+  height: 608px;
+}
+
+.buy-link {
+  display: block;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 42px;
+}
+
 /**-------------------------------kaufman------------------------------**/
 
 .kaufman {
@@ -267,6 +417,25 @@
   top: 0;
   right: -210px;
 }
+
+/**-------------------------------resources------------------------------**/
+
+.resources {
+  padding: 100px 0 217px 0;
+}
+
+.resources__logo-zone {
+  display: flex;
+  margin: 80px auto 0;
+  width: 1100px;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
+
 
 /**-----------------------------------------footer--------------------------**/
 
