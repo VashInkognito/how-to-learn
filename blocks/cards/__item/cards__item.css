@@ -1,3 +1,4 @@
 .cards__item {
   width: 240px;
+  list-style-type: none;
 }

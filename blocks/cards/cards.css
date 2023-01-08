@@ -2,6 +2,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: 240px 240px 240px;
-  gap: 100px;
+  grid-column-gap: 100px;
   width: 920px;
+  padding: 0px;
 }
